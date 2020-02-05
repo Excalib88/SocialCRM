@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialCRM.DAL", "src\SocialCRM.DAL\SocialCRM.DAL.csproj", "{B1E3F15A-3A7B-4068-8830-188948F4B461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialCRM.DAL.Migrations", "src\SocialCRM.DAL.Migrations\SocialCRM.DAL.Migrations.csproj", "{CC5590EF-67C0-4AED-B8A1-37054EC8E2DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialCRM.Web", "src\SocialCRM.Web\SocialCRM.Web.csproj", "{FAB30D66-2B16-4102-8C38-7ED8A8369E3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1E3F15A-3A7B-4068-8830-188948F4B461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E3F15A-3A7B-4068-8830-188948F4B461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E3F15A-3A7B-4068-8830-188948F4B461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E3F15A-3A7B-4068-8830-188948F4B461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC5590EF-67C0-4AED-B8A1-37054EC8E2DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC5590EF-67C0-4AED-B8A1-37054EC8E2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC5590EF-67C0-4AED-B8A1-37054EC8E2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC5590EF-67C0-4AED-B8A1-37054EC8E2DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAB30D66-2B16-4102-8C38-7ED8A8369E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB30D66-2B16-4102-8C38-7ED8A8369E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB30D66-2B16-4102-8C38-7ED8A8369E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB30D66-2B16-4102-8C38-7ED8A8369E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

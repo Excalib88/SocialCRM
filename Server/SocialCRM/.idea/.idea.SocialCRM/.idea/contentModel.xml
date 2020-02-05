@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\projects\SocialCRM\Server\SocialCRM" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SocialCRM.sln" t="IncludeFlat" />
+      <e p="src\SocialCRM.DAL" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DataContext.cs" t="Include" />
+        <e p="Entities" t="Include">
+          <e p="BaseEntity.cs" t="Include" />
+          <e p="IEntity.cs" t="Include" />
+          <e p="LeadEntity.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="SocialCRM.DAL.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SocialCRM.DAL.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\SocialCRM.DAL.Migrations" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="SocialCRM.DAL.Migrations.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SocialCRM.DAL.Migrations.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\SocialCRM.Web" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="SocialCRM.Web.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="SocialCRM.Web.csproj" t="IncludeRecursive" />
+        <e p="Startup.cs" t="Include" />
+      </e>
+    </e>
+    <e p="C:\Users\rave9\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\rave9\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SocialCRM.-1129383569.00" t="ExcludeRecursive" />
+  </component>
+</project>
