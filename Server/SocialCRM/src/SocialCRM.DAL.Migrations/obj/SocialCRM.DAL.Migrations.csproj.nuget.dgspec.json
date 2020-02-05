@@ -14,12 +14,14 @@
         "outputPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL.Migrations\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rave9\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rave9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

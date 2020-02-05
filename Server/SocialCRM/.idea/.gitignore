@@ -1,2 +1,5 @@
 ﻿# Default ignored files
 /.idea.SocialCRM/.idea/workspace.xml
+# Datasource local storage ignored files
+/.idea.SocialCRM/.idea/dataSources/
+/.idea.SocialCRM/.idea/dataSources.local.xml
