@@ -1,20 +1,19 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\SocialCRM.DAL.csproj",
+    "projectUniqueName": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.DAL/SocialCRM.DAL.csproj",
     "projectName": "SocialCRM.DAL",
-    "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\SocialCRM.DAL.csproj",
-    "outputPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\obj\\",
+    "projectPath": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.DAL/SocialCRM.DAL.csproj",
+    "outputPath": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.DAL/obj/",
     "projectStyle": "PackageReference",
-    "originalTargetFrameworks": [
-      "netstandard2.1"
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
     ],
-    "sources": {
-      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-      "https://api.nuget.org/v3/index.json": {}
-    },
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
     "frameworks": {
-      "netstandard2.1": {
+      "netcoreapp3.1": {
         "projectReferences": {}
       }
     },
@@ -25,7 +24,7 @@
     }
   },
   "frameworks": {
-    "netstandard2.1": {
+    "netcoreapp3.1": {
       "dependencies": {
         "Microsoft.EntityFrameworkCore": {
           "target": "Package",
@@ -45,13 +44,7 @@
         "net48"
       ],
       "assetTargetFallback": true,
-      "warn": true,
-      "frameworkReferences": {
-        "NETStandard.Library": {
-          "privateAssets": "all"
-        }
-      },
-      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      "warn": true
     }
   }
 }

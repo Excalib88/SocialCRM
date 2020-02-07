@@ -13,4 +13,8 @@
       <ProjectReference Include="..\SocialCRM.DAL\SocialCRM.DAL.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Controllers" />
+    </ItemGroup>
+
 </Project>

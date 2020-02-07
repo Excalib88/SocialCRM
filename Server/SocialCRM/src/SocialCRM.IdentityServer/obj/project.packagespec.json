@@ -1,18 +1,17 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.IdentityServer\\SocialCRM.IdentityServer.csproj",
+    "projectUniqueName": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.IdentityServer/SocialCRM.IdentityServer.csproj",
     "projectName": "SocialCRM.IdentityServer",
-    "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.IdentityServer\\SocialCRM.IdentityServer.csproj",
-    "outputPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.IdentityServer\\obj\\",
+    "projectPath": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.IdentityServer/SocialCRM.IdentityServer.csproj",
+    "outputPath": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.IdentityServer/obj/",
     "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
     "originalTargetFrameworks": [
       "netcoreapp3.1"
     ],
-    "sources": {
-      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-      "https://api.nuget.org/v3/index.json": {}
-    },
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {}
@@ -27,6 +26,18 @@
   "frameworks": {
     "netcoreapp3.1": {
       "dependencies": {
+        "IdentityServer4.AspNetIdentity": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "IdentityServer4.EntityFramework": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "IdentityServer4.EntityFramework.Storage": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
         "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
           "target": "Package",
           "version": "[3.1.1, )"
@@ -47,13 +58,17 @@
           "target": "Package",
           "version": "[3.1.1, )"
         },
+        "Microsoft.Extensions.DependencyInjection": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
         "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
           "target": "Package",
           "version": "[1.9.10, )"
         },
         "Npgsql.EntityFrameworkCore.PostgreSQL": {
           "target": "Package",
-          "version": "[3.1.1.1, )"
+          "version": "[3.1.1.2, )"
         }
       },
       "imports": [
@@ -65,16 +80,7 @@
         "net48"
       ],
       "assetTargetFallback": true,
-      "warn": true,
-      "frameworkReferences": {
-        "Microsoft.AspNetCore.App": {
-          "privateAssets": "none"
-        },
-        "Microsoft.NETCore.App": {
-          "privateAssets": "all"
-        }
-      },
-      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      "warn": true
     }
   }
 }

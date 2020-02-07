@@ -40,12 +40,9 @@
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V4.dll": {},
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.dll": {}
         },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ],
         "build": {
-          "buildTransitive/Microsoft.AspNetCore.Identity.UI.props": {},
-          "buildTransitive/Microsoft.AspnetCore.Identity.UI.targets": {}
+          "build/Microsoft.AspNetCore.Identity.UI.props": {},
+          "build/Microsoft.AspnetCore.Identity.UI.targets": {}
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/Microsoft.AspNetCore.Identity.UI.props": {},
@@ -55,10 +52,10 @@
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Bcl.HashCode/1.1.0": {
@@ -357,10 +354,10 @@
       "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "ref/netstandard2.0/System.ComponentModel.Annotations.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "lib/netstandard2.0/System.ComponentModel.Annotations.dll": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/4.7.0": {
@@ -383,7 +380,7 @@
       },
       "SocialCRM.DAL/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
+        "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "3.1.1.1"
@@ -399,7 +396,7 @@
   },
   "libraries": {
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.1": {
-      "sha512": "sFfUegR52PSmTcT2eH1YywPdXLwx0Tt4S54yjqIP5+R/BmZKbEfCOvaGqAwKYbpwztHTua013pPeDKP8DmuGtw==",
+      "sha512": "/DLScdYho4iswaFJ0v3nUH/or/9VDJRt62ZFyUGl0nlYRQlAykhQRTSQrrmhiXyXr19nfCHgHFjMe1wWUwm8Yg==",
       "type": "package",
       "path": "microsoft.aspnetcore.cryptography.internal/3.1.1",
       "files": [
@@ -413,7 +410,7 @@
       ]
     },
     "Microsoft.AspNetCore.Cryptography.KeyDerivation/3.1.1": {
-      "sha512": "hsgMSiKDe/UDdKarzld9aUMyRjiMBi847QGnLBDvbvuAlvlaqZ6CKMPjLch43Yf3ZKoHVr716LsNNOAsfIs1oQ==",
+      "sha512": "AW7Iej3ieLNIXljXciLHKvL35h0oY61uNYfxbb17P6RcD6RgHnTyaAaW9jE4uJav/EsySceLIsSp9WMbs6W5LA==",
       "type": "package",
       "path": "microsoft.aspnetcore.cryptography.keyderivation/3.1.1",
       "files": [
@@ -429,7 +426,7 @@
       ]
     },
     "Microsoft.AspNetCore.Identity.UI/3.1.1": {
-      "sha512": "ZGK9dA7EdjGjwV9yPE9rl9czb8B7W085sOIBQzn6nEYV1bJ/qUXPqP+qJlA6BACwLIh5IySfAU4XYchwJMvkCw==",
+      "sha512": "OZ0P7yyOOiOi33VITlgK4rPy/XMgA6G+yurfAJBCj8LxR7/LOU3SogTWenVwxhN0VoTwwCC0DwVjRThYNr26cw==",
       "type": "package",
       "path": "microsoft.aspnetcore.identity.ui/3.1.1",
       "files": [
@@ -740,7 +737,7 @@
       ]
     },
     "Microsoft.Extensions.FileProviders.Abstractions/3.1.1": {
-      "sha512": "V9WqFEKiUygbsNB3JUMUUJAoTlDxNqBwfybZTF7RbFCgbooFNyCscBOdiciomA785wiRoX/Uy/WIea9wzPBPgQ==",
+      "sha512": "+gEFnh5TUk57jnTJS+oS5gGfOjBzf6xchAkPGZwQBoisgarxAR6ZITwpoSDAoxIMfcSJaTXQodyN/SoQoB6epA==",
       "type": "package",
       "path": "microsoft.extensions.fileproviders.abstractions/3.1.1",
       "files": [
@@ -756,7 +753,7 @@
       ]
     },
     "Microsoft.Extensions.FileProviders.Embedded/3.1.1": {
-      "sha512": "+yygkjo94EkMggtsBkj/W3/OR/QTXrP+iGSrz3MkJJsd/lRJ3PrENeEkOowfqCAKg/U0AMJroAqI7U4g7i/+9w==",
+      "sha512": "2zLNi+Qi32etiQWWC1ilSx8jEjiCHCFA6pP6zPFSrbrRlXzWuyk8GrVxBLJ0/NkjADfbRIRsVJ9GD0PjOhairQ==",
       "type": "package",
       "path": "microsoft.extensions.fileproviders.embedded/3.1.1",
       "files": [
@@ -777,7 +774,7 @@
       ]
     },
     "Microsoft.Extensions.Identity.Core/3.1.1": {
-      "sha512": "gtp5+Oa4tu8dFoyZO0frBYKm+RFuG/CSO6knZfX4HKiRy8k+8V8jxxNqP/itJ/MrmlmsxLlkpYyzVNHMCkMfsA==",
+      "sha512": "bMgJXwdZNOEuKRnA7yH9lbcZwdedPgL3UIuVdglRbAYDEKbd48IESu1UVc4HSzCh+x9G4RTOoqn+Kc9XShoDow==",
       "type": "package",
       "path": "microsoft.extensions.identity.core/3.1.1",
       "files": [
@@ -793,7 +790,7 @@
       ]
     },
     "Microsoft.Extensions.Identity.Stores/3.1.1": {
-      "sha512": "u8GFozRlClmW/6xeJkX3KoRhsTEt7jWji49PElR9mnEoMhSaupwwTSmkfspExD8m0mcWmvcj7zMhJDi6dsJYFQ==",
+      "sha512": "QUEg74hNLjFoxvwNQXWAxvm9DsTJWle4HQ41HtQNsWTxVr5VS9QHIz+8MTKD6yEQ/+VTj/OTPe+6Y8LKNeP4yA==",
       "type": "package",
       "path": "microsoft.extensions.identity.stores/3.1.1",
       "files": [
@@ -855,7 +852,7 @@
       ]
     },
     "Microsoft.Extensions.Primitives/3.1.1": {
-      "sha512": "tC5Eo5DbJA+NgiIw26R5c97N02tFvtfqstUxqb/4qXPLXI2IAIWSMUkh/1c9Gw59TT9hNkLwlmLErSPlHgyJVQ==",
+      "sha512": "CYZT1iTczEUyQBbDcs6BF4qcb8WmIprkqYOjS+kcNjM98u4tS/x3JKO/bQIqYiXR0ZP0FRWrehYJLe7Tp2qxrA==",
       "type": "package",
       "path": "microsoft.extensions.primitives/3.1.1",
       "files": [
@@ -871,7 +868,7 @@
       ]
     },
     "Newtonsoft.Json/12.0.2": {
-      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "sha512": "mtweBXPWhp1CMQATtBT7ZfMZrbZBTKfjGwz6Y75NwGjx/GztDaUnfw8GK9KZ2T4fDIqKJyDjc9Rxlw5+G2FcVA==",
       "type": "package",
       "path": "newtonsoft.json/12.0.2",
       "files": [
@@ -901,7 +898,7 @@
       ]
     },
     "Npgsql/4.1.3": {
-      "sha512": "sWTXCb6WPPO7WEw4+1XoRqE49EdWmuyMA15LVbzV6jZgRxYWK8TbdniWMjguzmAgOZVYTmrCf+jsqPYoSqACvA==",
+      "sha512": "zzkPFO1tmELms0nykeG2nUJZNfqciDpFBeAhMXY9hzkYuaXtc+qfqVwevBVUj2yHypqvwFFOPwGmLe7b23LZ0g==",
       "type": "package",
       "path": "npgsql/4.1.3",
       "files": [
@@ -925,7 +922,7 @@
       ]
     },
     "Npgsql.EntityFrameworkCore.PostgreSQL/3.1.1.1": {
-      "sha512": "FFgf0seczlqX/39dABi6rUxPwPDZyfsfUva13eLC/5aWQDLzF7Vnbm4cbVBwIGyCYbD7jdsXRW2DtG1yG15Q7w==",
+      "sha512": "2yi+KJNNUJi0n1qfbQGWq19oboITPq/hs5+w6K3n3nkDz6bd9K/0f+8IQJnQbyiR2R8mltIbKPshSyGeAXPBzA==",
       "type": "package",
       "path": "npgsql.entityframeworkcore.postgresql/3.1.1.1",
       "files": [
@@ -1076,7 +1073,7 @@
       ]
     },
     "System.Runtime.CompilerServices.Unsafe/4.6.0": {
-      "sha512": "HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
+      "sha512": "+5zQ0p3QoSFYlLU9G9f6Xn8Wki68IEEoKT5xxK8egKqv8xUV2KkZc2vpae7rqAcIYFh+EdmnbEX8HhPh5nWBzQ==",
       "type": "package",
       "path": "system.runtime.compilerservices.unsafe/4.6.0",
       "files": [
@@ -1114,33 +1111,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rave9\\.nuget\\packages\\": {}
+    "/Users/dmansurov/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Web\\SocialCRM.Web.csproj",
+      "projectUniqueName": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.Web/SocialCRM.Web.csproj",
       "projectName": "SocialCRM.Web",
-      "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Web\\SocialCRM.Web.csproj",
-      "packagesPath": "C:\\Users\\rave9\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Web\\obj\\",
+      "projectPath": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.Web/SocialCRM.Web.csproj",
+      "packagesPath": "/Users/dmansurov/.nuget/packages/",
+      "outputPath": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.Web/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\rave9\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/dmansurov/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\SocialCRM.DAL.csproj": {
-              "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\SocialCRM.DAL.csproj"
+            "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.DAL/SocialCRM.DAL.csproj": {
+              "projectPath": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.DAL/SocialCRM.DAL.csproj"
             }
           }
         }
@@ -1172,16 +1171,7 @@
           "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }

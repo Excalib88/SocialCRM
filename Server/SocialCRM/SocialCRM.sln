@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialCRM.DAL.Migrations", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialCRM.Web", "src\SocialCRM.Web\SocialCRM.Web.csproj", "{FAB30D66-2B16-4102-8C38-7ED8A8369E3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialCRM.IdentityServer", "src\SocialCRM.IdentityServer\SocialCRM.IdentityServer.csproj", "{B01771D9-2170-44FB-A2E0-437183D08288}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialCRM.IdentityServer", "src\SocialCRM.IdentityServer\SocialCRM.IdentityServer.csproj", "{EC9893AD-ECFB-40DD-9FC0-7C4344DEA224}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{FAB30D66-2B16-4102-8C38-7ED8A8369E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAB30D66-2B16-4102-8C38-7ED8A8369E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAB30D66-2B16-4102-8C38-7ED8A8369E3C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B01771D9-2170-44FB-A2E0-437183D08288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B01771D9-2170-44FB-A2E0-437183D08288}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B01771D9-2170-44FB-A2E0-437183D08288}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B01771D9-2170-44FB-A2E0-437183D08288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC9893AD-ECFB-40DD-9FC0-7C4344DEA224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC9893AD-ECFB-40DD-9FC0-7C4344DEA224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC9893AD-ECFB-40DD-9FC0-7C4344DEA224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC9893AD-ECFB-40DD-9FC0-7C4344DEA224}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
