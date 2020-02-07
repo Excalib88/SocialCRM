@@ -26,6 +26,7 @@
           <e p="DbRepository.cs" t="Include" />
           <e p="IDbRepository.cs" t="Include" />
         </e>
+        <e p="ServiceCollectionExtensions.cs" t="Include" />
         <e p="SocialCRM.DAL.csproj" t="IncludeRecursive" />
       </e>
       <e p="src/SocialCRM.DAL.Migrations" t="IncludeRecursive">
@@ -40,7 +41,6 @@
         <e p="SocialCRM.DAL.Migrations.csproj" t="IncludeRecursive" />
       </e>
       <e p="src/SocialCRM.IdentityServer" t="IncludeRecursive">
-        <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controller" t="Include">
@@ -144,7 +144,6 @@
         </e>
       </e>
       <e p="src/SocialCRM.Web" t="IncludeRecursive">
-        <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include" />

@@ -21,14 +21,7 @@ namespace SocialCRM.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(options =>
-            {
-                options
-                    .UseNpgsql(_configuration.GetConnectionString("DefaultConnection"),
-                        assembly =>
-                            assembly.MigrationsAssembly
-                                ("SocialCRM.DAL.Migrations"));
-            });
+            services.AddNpgsql(_configuration);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
