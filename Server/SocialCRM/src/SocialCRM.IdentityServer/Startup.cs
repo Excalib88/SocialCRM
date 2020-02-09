@@ -1,11 +1,10 @@
-using System;
-using IdentityServer4.Configuration;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using SocialCRM.IdentityServer.Data;
 
 namespace SocialCRM.IdentityServer
@@ -24,33 +23,8 @@ namespace SocialCRM.IdentityServer
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(_configuration.GetConnectionString("DefaultConnection")));
             
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
-            
-            
-            
-            services
-                .AddIdentityServer(options =>
-                {
-                    options.IssuerUri = "socialcrm-id";
-                })
-                .AddDeveloperSigningCredential()
-                .AddAspNetIdentity<ApplicationUser>()
-                .AddInMemoryClients(Config.GetClients(_configuration))
-                .AddInMemoryApiResources(Config.GetApiResources())
-                .AddInMemoryIdentityResources(Config.GetIdentityResources())
-                .AddConfigurationStore(options =>
-                {
-                    options.ConfigureDbContext = b => b.UseNpgsql(_configuration.GetConnectionString("DefaultConnection"), 
-                        sql => sql.MigrationsAssembly("SocialCRM.IdentityServer"));
-                })
-                .AddOperationalStore(options =>
-                {
-                    options.ConfigureDbContext = b => b.UseNpgsql(_configuration.GetConnectionString("DefaultConnection"),
-                        sql => sql.MigrationsAssembly("SocialCRM.IdentityServer"));
-                    options.EnableTokenCleanup = true;
-                });
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<ApplicationDbContext>();
             
             services.AddRazorPages();
         }

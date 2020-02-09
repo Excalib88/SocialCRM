@@ -5,16 +5,19 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
       <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.1.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.0.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.0.0" />
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\SocialCRM.DAL.Migrations\SocialCRM.DAL.Migrations.csproj" />
       <ProjectReference Include="..\SocialCRM.DAL\SocialCRM.DAL.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Controllers" />
+      <ProjectReference Include="..\SocialCRM.Domain\SocialCRM.Domain.csproj" />
     </ItemGroup>
 
 </Project>

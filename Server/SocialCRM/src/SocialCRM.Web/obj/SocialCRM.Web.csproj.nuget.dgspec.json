@@ -4,6 +4,72 @@
     "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Web\\SocialCRM.Web.csproj": {}
   },
   "projects": {
+    "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL.Migrations\\SocialCRM.DAL.Migrations.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL.Migrations\\SocialCRM.DAL.Migrations.csproj",
+        "projectName": "SocialCRM.DAL.Migrations",
+        "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL.Migrations\\SocialCRM.DAL.Migrations.csproj",
+        "packagesPath": "C:\\Users\\rave9\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL.Migrations\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rave9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\SocialCRM.DAL.csproj": {
+                "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\SocialCRM.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\SocialCRM.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -66,14 +132,14 @@
         }
       }
     },
-    "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Web\\SocialCRM.Web.csproj": {
+    "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Domain\\SocialCRM.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Web\\SocialCRM.Web.csproj",
-        "projectName": "SocialCRM.Web",
-        "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Web\\SocialCRM.Web.csproj",
+        "projectUniqueName": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Domain\\SocialCRM.Domain.csproj",
+        "projectName": "SocialCRM.Domain",
+        "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Domain\\SocialCRM.Domain.csproj",
         "packagesPath": "C:\\Users\\rave9\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Web\\obj\\",
+        "outputPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rave9\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -104,13 +170,101 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Web\\SocialCRM.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Web\\SocialCRM.Web.csproj",
+        "projectName": "SocialCRM.Web",
+        "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Web\\SocialCRM.Web.csproj",
+        "packagesPath": "C:\\Users\\rave9\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rave9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL.Migrations\\SocialCRM.DAL.Migrations.csproj": {
+                "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL.Migrations\\SocialCRM.DAL.Migrations.csproj"
+              },
+              "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\SocialCRM.DAL.csproj": {
+                "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\SocialCRM.DAL.csproj"
+              },
+              "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Domain\\SocialCRM.Domain.csproj": {
+                "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.Domain\\SocialCRM.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
               "version": "[3.1.1, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[3.1.1.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

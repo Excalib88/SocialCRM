@@ -1,20 +1,25 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.DAL.Migrations/SocialCRM.DAL.Migrations.csproj",
+    "projectUniqueName": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL.Migrations\\SocialCRM.DAL.Migrations.csproj",
     "projectName": "SocialCRM.DAL.Migrations",
-    "projectPath": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.DAL.Migrations/SocialCRM.DAL.Migrations.csproj",
-    "outputPath": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.DAL.Migrations/obj/",
+    "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL.Migrations\\SocialCRM.DAL.Migrations.csproj",
+    "outputPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL.Migrations\\obj\\",
     "projectStyle": "PackageReference",
-    "fallbackFolders": [
-      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-    ],
     "originalTargetFrameworks": [
-      "netcoreapp3.1"
+      "netstandard2.1"
     ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
     "frameworks": {
-      "netcoreapp3.1": {
-        "projectReferences": {}
+      "netstandard2.1": {
+        "projectReferences": {
+          "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\SocialCRM.DAL.csproj": {
+            "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\SocialCRM.DAL.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -24,19 +29,15 @@
     }
   },
   "frameworks": {
-    "netcoreapp3.1": {
+    "netstandard2.1": {
       "dependencies": {
-        "Microsoft.EntityFrameworkCore.Tools": {
-          "target": "Package",
-          "version": "[3.1.1, )"
-        },
-        "Microsoft.Extensions.DependencyInjection": {
+        "Microsoft.EntityFrameworkCore.Design": {
           "target": "Package",
           "version": "[3.1.1, )"
         },
         "Npgsql.EntityFrameworkCore.PostgreSQL": {
           "target": "Package",
-          "version": "[3.1.1.2, )"
+          "version": "[3.1.1.1, )"
         }
       },
       "imports": [
@@ -48,7 +49,13 @@
         "net48"
       ],
       "assetTargetFallback": true,
-      "warn": true
+      "warn": true,
+      "frameworkReferences": {
+        "NETStandard.Library": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
     }
   }
 }

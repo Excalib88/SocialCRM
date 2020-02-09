@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.IdentityServer/SocialCRM.IdentityServer.csproj": {}
+    "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.IdentityServer\\SocialCRM.IdentityServer.csproj": {}
   },
   "projects": {
-    "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.IdentityServer/SocialCRM.IdentityServer.csproj": {
+    "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.IdentityServer\\SocialCRM.IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.IdentityServer/SocialCRM.IdentityServer.csproj",
+        "projectUniqueName": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.IdentityServer\\SocialCRM.IdentityServer.csproj",
         "projectName": "SocialCRM.IdentityServer",
-        "projectPath": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.IdentityServer/SocialCRM.IdentityServer.csproj",
-        "packagesPath": "/Users/dmansurov/.nuget/packages/",
-        "outputPath": "/Users/dmansurov/Projects/SocialCRM/Server/SocialCRM/src/SocialCRM.IdentityServer/obj/",
+        "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.IdentityServer\\SocialCRM.IdentityServer.csproj",
+        "packagesPath": "C:\\Users\\rave9\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/dmansurov/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\rave9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,14 +38,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "IdentityServer4.EntityFramework": {
-              "target": "Package",
-              "version": "[3.1.1, )"
-            },
-            "IdentityServer4.EntityFramework.Storage": {
-              "target": "Package",
-              "version": "[3.1.1, )"
-            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.1, )"
@@ -67,17 +58,13 @@
               "target": "Package",
               "version": "[3.1.1, )"
             },
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[3.1.1, )"
-            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.9.10, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[3.1.1.2, )"
+              "version": "[3.1.1.1, )"
             }
           },
           "imports": [
@@ -98,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

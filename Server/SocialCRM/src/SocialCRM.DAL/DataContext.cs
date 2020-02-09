@@ -1,9 +1,37 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using SocialCRM.DAL.Entities;
 
 namespace SocialCRM.DAL
 {
     public class DataContext: DbContext
     {
+        public DbSet<CompanyEntity> Companies { get; set; }
+        public DbSet<LeadEntity> Leads { get; set; }
+        public DbSet<LegalEntity> Legals { get; set; }
+        public DbSet<OrderEntity> Orders { get; set; }
+        public DbSet<PersonEntity> Persons { get; set; }
+        public DbSet<ProductEntity> Products { get; set; }
+
+        public DataContext(DbContextOptions<DataContext> options, IServiceProvider serviceProvider): base(options)
+        {
+        }
         
+        public async Task<int> SaveChangesAsync()
+        {
+            return await base.SaveChangesAsync();
+        }
+
+        public DbSet<T> DbSet<T>() where T : class
+        {
+            return Set<T>();
+        }
+
+        public new IQueryable<T> Query<T>() where T : class
+        {
+            return Set<T>();
+        }
     }
 }

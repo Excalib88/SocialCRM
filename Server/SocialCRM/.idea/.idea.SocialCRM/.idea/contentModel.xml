@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_SocialCRM.520987376.00" t="ExcludeRecursive" />
-    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="C:\projects\SocialCRM\Server\SocialCRM" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="SocialCRM.sln" t="IncludeFlat" />
-      <e p="src/SocialCRM.DAL" t="IncludeRecursive">
+      <e p="src\SocialCRM.DAL" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="DataContext.cs" t="Include" />
         <e p="Entities" t="Include">
           <e p="BaseEntity.cs" t="Include" />
+          <e p="CompanyEntity.cs" t="Include" />
           <e p="IEntity.cs" t="Include" />
           <e p="LeadEntity.cs" t="Include" />
+          <e p="LegalEntity.cs" t="Include" />
+          <e p="OrderEntity.cs" t="Include" />
+          <e p="PersonEntity.cs" t="Include" />
+          <e p="ProductEntity.cs" t="Include" />
+          <e p="UserEntity.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="SocialCRM.DAL.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -26,43 +29,62 @@
           <e p="DbRepository.cs" t="Include" />
           <e p="IDbRepository.cs" t="Include" />
         </e>
-        <e p="ServiceCollectionExtensions.cs" t="Include" />
         <e p="SocialCRM.DAL.csproj" t="IncludeRecursive" />
       </e>
-      <e p="src/SocialCRM.DAL.Migrations" t="IncludeRecursive">
+      <e p="src\SocialCRM.DAL.Migrations" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Migrations" t="Include">
+          <e p="20200208113308_InitialMigration.cs" t="Include" />
+          <e p="20200208113308_InitialMigration.Designer.cs" t="Include" />
+          <e p="20200208233627_ModifiedBaseEntity.cs" t="Include" />
+          <e p="20200208233627_ModifiedBaseEntity.Designer.cs" t="Include" />
+          <e p="DataContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
+            <e p="netstandard2.1" t="Include">
               <e p="SocialCRM.DAL.Migrations.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="SocialCRM.DAL.Migrations.csproj" t="IncludeRecursive" />
       </e>
-      <e p="src/SocialCRM.IdentityServer" t="IncludeRecursive">
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="Controller" t="Include">
-          <e p="AccountController.cs" t="Include" />
+      <e p="src\SocialCRM.Domain" t="IncludeRecursive">
+        <e p="Abstractions" t="Include">
+          <e p="ILeadService.cs" t="Include" />
         </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="LeadModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="SocialCRM.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="LeadService.cs" t="Include" />
+        </e>
+        <e p="SocialCRM.Domain.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\SocialCRM.IdentityServer" t="IncludeRecursive">
+        <e p="appsettings.json" t="Include" />
+        <e p="Areas" t="Include">
+          <e p="Identity" t="Include">
+            <e p="Pages" t="Include">
+              <e p="_ViewStart.cshtml" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
         <e p="Data" t="Include">
           <e p="ApplicationDbContext.cs" t="Include" />
-          <e p="ApplicationUser.cs" t="Include" />
-          <e p="Config.cs" t="Include" />
           <e p="Migrations" t="Include">
-            <e p="IdentityServer" t="Include">
-              <e p="ConfigurationDb" t="Include">
-                <e p="20200207184738_InitialConfigurationDbMigration.cs" t="Include" />
-                <e p="20200207184738_InitialConfigurationDbMigration.Designer.cs" t="Include" />
-                <e p="ConfigurationDbContextModelSnapshot.cs" t="Include" />
-              </e>
-              <e p="PersistedGrantDb" t="Include">
-                <e p="20200207184517_InitialPersistedGrantDbMigration.cs" t="Include" />
-                <e p="20200207184517_InitialPersistedGrantDbMigration.Designer.cs" t="Include" />
-                <e p="PersistedGrantDbContextModelSnapshot.cs" t="Include" />
-              </e>
-            </e>
+            <e p="00000000000000_CreateIdentitySchema.cs" t="Include" />
+            <e p="00000000000000_CreateIdentitySchema.Designer.cs" t="Include" />
+            <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
           </e>
         </e>
         <e p="Dockerfile" t="Include" />
@@ -70,7 +92,23 @@
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
               <e p="SocialCRM.IdentityServer.AssemblyInfo.cs" t="Include" />
+              <e p="SocialCRM.IdentityServer.RazorAssemblyInfo.cs" t="Include" />
             </e>
+          </e>
+        </e>
+        <e p="Pages" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Error.cshtml" t="Include" />
+          <e p="Error.cshtml.cs" t="Include" />
+          <e p="Index.cshtml" t="Include" />
+          <e p="Index.cshtml.cs" t="Include" />
+          <e p="Privacy.cshtml" t="Include" />
+          <e p="Privacy.cshtml.cs" t="Include" />
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_LoginPartial.cshtml" t="Include" />
+            <e p="_ValidationScriptsPartial.cshtml" t="Include" />
           </e>
         </e>
         <e p="Program.cs" t="Include" />
@@ -79,7 +117,6 @@
         </e>
         <e p="SocialCRM.IdentityServer.csproj" t="IncludeRecursive" />
         <e p="Startup.cs" t="Include" />
-        <e p="tempkey.rsa" t="Include" />
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
             <e p="site.css" t="Include" />
@@ -143,16 +180,21 @@
           </e>
         </e>
       </e>
-      <e p="src/SocialCRM.Web" t="IncludeRecursive">
+      <e p="src\SocialCRM.Web" t="IncludeRecursive">
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Controllers" t="Include" />
+        <e p="Controllers" t="Include">
+          <e p="LeadController.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
               <e p="SocialCRM.Web.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="Profiles" t="Include">
+          <e p="LeadProfile.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
@@ -162,5 +204,9 @@
         <e p="Startup.cs" t="Include" />
       </e>
     </e>
+    <e p="C:\Users\rave9\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\rave9\.Rider2019.3\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\rave9\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\rave9\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SocialCRM.-1129383569.00" t="ExcludeRecursive" />
   </component>
 </project>
