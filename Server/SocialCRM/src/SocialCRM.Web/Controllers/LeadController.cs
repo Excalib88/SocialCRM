@@ -6,9 +6,7 @@ using SocialCRM.Domain.Models;
 
 namespace SocialCRM.Web.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class LeadController : Controller
+    public class LeadController : BaseController
     {
         private readonly ILeadService _leadService;
 

@@ -10,6 +10,8 @@ namespace SocialCRM.Web.Profiles
         {
             CreateMap<LeadEntity, LeadModel>();
             CreateMap<LeadModel, LeadEntity>();
+            CreateMap<OrderModel, OrderEntity>();
+            CreateMap<OrderEntity, OrderModel>();
         }
     }
 }
