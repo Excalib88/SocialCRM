@@ -19,11 +19,11 @@ namespace SocialCRM.DAL.Repositories
         Task Delete<T>(Guid entity) where T : class, IEntity;
         
         Task Remove<T>(T entity) where T: class, IEntity;
-        Task Remove<T>(IEnumerable<T> entities) where T: class, IEntity;
+        Task RemoveRange<T>(IEnumerable<T> entities) where T: class, IEntity;
 
         Task Update<T>(T entity) where T: class, IEntity;
-        Task Update<T>(IEnumerable<T> entities) where T: class, IEntity;
+        Task UpdateRange<T>(IEnumerable<T> entities) where T: class, IEntity;
 
-        Task<int> SaveChangeAsync();
+        Task<int> SaveChangesAsync();
     }
 }

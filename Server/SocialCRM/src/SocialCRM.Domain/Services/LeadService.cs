@@ -29,7 +29,7 @@ namespace SocialCRM.Domain.Services
             entity.UserCreated = _currentUser.Id;
             
             var result = await _dbRepository.Add(entity);
-            await _dbRepository.SaveChangeAsync();
+            await _dbRepository.SaveChangesAsync();
             
             return result;
         }
@@ -46,14 +46,14 @@ namespace SocialCRM.Domain.Services
         {
             var entity = _mapper.Map<LeadEntity>(lead);
             
-            await _dbRepository.SaveChangeAsync();
             await _dbRepository.Update(entity);
+            await _dbRepository.SaveChangesAsync();
         }
 
         public async Task Delete(Guid leadId)
         {
             await _dbRepository.Delete<LeadEntity>(leadId);
-            await _dbRepository.SaveChangeAsync();
+            await _dbRepository.SaveChangesAsync();
         }
     }
 }

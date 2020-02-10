@@ -50,7 +50,7 @@ namespace SocialCRM.DAL.Repositories
             await Task.Run(() => _context.Set<T>().Remove(entity));
         }
 
-        public async Task Remove<T>(IEnumerable<T> entities) where T: class, IEntity
+        public async Task RemoveRange<T>(IEnumerable<T> entities) where T: class, IEntity
         {
             await Task.Run(() => _context.Set<T>().RemoveRange(entities));
         }
@@ -60,12 +60,12 @@ namespace SocialCRM.DAL.Repositories
             await Task.Run(() => _context.Set<T>().Update(entity));
         }
 
-        public async Task Update<T>(IEnumerable<T> entities) where T: class, IEntity
+        public async Task UpdateRange<T>(IEnumerable<T> entities) where T: class, IEntity
         {
             await Task.Run(() => _context.Set<T>().UpdateRange(entities));
         }
 
-        public async Task<int> SaveChangeAsync()
+        public async Task<int> SaveChangesAsync()
         {
             return await _context.SaveChangesAsync();
         }
