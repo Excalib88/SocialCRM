@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace SocialCRM.DAL.Entities
+namespace SocialCRM.Domain.Models
 {
-    public class UserEntity
+    public class UserModel
     {
         public Guid Id { get; set; }
         public string Login { get; set; }
