@@ -26,5 +26,10 @@ namespace SocialCRM.Domain.Services
 
             return result;
         }
+
+        public Guid Get(Guid id)
+        {
+            return Guid.Empty;
+        }
     }
 }
