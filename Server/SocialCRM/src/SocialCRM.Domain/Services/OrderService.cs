@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using SocialCRM.DAL.Entities;
 using SocialCRM.DAL.Repositories;
 using SocialCRM.Domain.Abstractions;
@@ -27,9 +29,12 @@ namespace SocialCRM.Domain.Services
             return result;
         }
 
-        public Guid Get(Guid id)
+        public async Task<OrderModel> Get(Guid id)
         {
-            return Guid.Empty;
+            var entity = await _dbRepository.Get<OrderEntity>().FirstOrDefaultAsync(x => x.Id == id);
+            var model = _mapper.Map<OrderModel>(entity);
+
+            return model;
         }
     }
 }

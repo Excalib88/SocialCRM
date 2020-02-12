@@ -52,8 +52,8 @@
       <e p="src\SocialCRM.Domain" t="IncludeRecursive">
         <e p="Abstractions" t="Include">
           <e p="ILeadService.cs" t="Include" />
+          <e p="IOrderAnalyticService.cs" t="Include" />
           <e p="IOrderService.cs" t="Include" />
-          <e p="IOrderStatisticService.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Models" t="Include">
@@ -195,8 +195,8 @@
         <e p="Controllers" t="Include">
           <e p="BaseController.cs" t="Include" />
           <e p="LeadController.cs" t="Include" />
+          <e p="OrderAnalyticController.cs" t="Include" />
           <e p="OrderController.cs" t="Include" />
-          <e p="OrderStatisticController.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

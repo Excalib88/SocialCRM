@@ -7,5 +7,6 @@ namespace SocialCRM.Domain.Abstractions
     public interface IOrderService
     {
         Task<Guid> Create(OrderModel order);
+        Task<OrderModel> Get(Guid id);
     }
 }
