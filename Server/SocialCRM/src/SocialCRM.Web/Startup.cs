@@ -57,10 +57,10 @@ namespace SocialCRM.Web
 
             services.AddScoped<IDbRepository, DbRepository>();
             services.AddTransient<ILeadService, LeadService>();
-            services.AddSingleton<UserEntity>(new UserEntity{Id = Guid.Empty});
+            services.AddSingleton(new UserEntity{Id = Guid.Empty});
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
         {
             app.UseRouting();
             app.UseAuthorization();

@@ -10,8 +10,8 @@ using SocialCRM.DAL;
 namespace SocialCRM.DAL.Migrations.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200208233627_ModifiedBaseEntity")]
-    partial class ModifiedBaseEntity
+    [Migration("20200220182621_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -51,6 +51,43 @@ namespace SocialCRM.DAL.Migrations.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Companies");
+                });
+
+            modelBuilder.Entity("SocialCRM.DAL.Entities.EmployeeEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<DateTime?>("DateUpdated")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<DateTime>("EmploymentDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<Guid?>("PersonId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Position")
+                        .HasColumnType("text");
+
+                    b.Property<Guid?>("UserCreated")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid?>("UserUpdated")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PersonId");
+
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("SocialCRM.DAL.Entities.LeadEntity", b =>
@@ -239,6 +276,13 @@ namespace SocialCRM.DAL.Migrations.Migrations
                     b.HasIndex("OrderEntityId");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("SocialCRM.DAL.Entities.EmployeeEntity", b =>
+                {
+                    b.HasOne("SocialCRM.DAL.Entities.PersonEntity", "Person")
+                        .WithMany()
+                        .HasForeignKey("PersonId");
                 });
 
             modelBuilder.Entity("SocialCRM.DAL.Entities.LeadEntity", b =>

@@ -14,8 +14,9 @@ namespace SocialCRM.DAL
         public DbSet<OrderEntity> Orders { get; set; }
         public DbSet<PersonEntity> Persons { get; set; }
         public DbSet<ProductEntity> Products { get; set; }
+        public DbSet<EmployeeEntity> Employees { get; set; }
 
-        public DataContext(DbContextOptions<DataContext> options, IServiceProvider serviceProvider): base(options)
+        public DataContext(DbContextOptions<DataContext> options): base(options)
         {
         }
         

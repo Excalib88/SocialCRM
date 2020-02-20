@@ -15,6 +15,7 @@ namespace SocialCRM.Web.Controllers
             _orderService = orderService;
         }
 
+        [HttpPost("create")]
         public async Task<ActionResult<Guid>> Create(OrderModel order)
         {
             var result = await _orderService.Create(order);

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
@@ -38,7 +37,8 @@ namespace SocialCRM.Domain.Services
         {
             var lead = await _dbRepository.Get<LeadEntity>().FirstOrDefaultAsync(x => x.Id == id);
             var leadModel = _mapper.Map<LeadModel>(lead);
-
+            var employees = _dbRepository.Add(new EmployeeEntity());
+            await _dbRepository.SaveChangesAsync();
             return leadModel;
         }
 

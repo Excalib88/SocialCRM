@@ -6,5 +6,5 @@ namespace SocialCRM.Web.Controllers
     [Route("[controller]")]
     public class BaseController : Controller
     {
-    }
+    } 
 }

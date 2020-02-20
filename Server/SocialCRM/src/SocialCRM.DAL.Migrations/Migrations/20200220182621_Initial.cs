@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SocialCRM.DAL.Migrations.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -45,6 +45,31 @@ namespace SocialCRM.DAL.Migrations.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Persons", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Employees",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    IsActive = table.Column<bool>(nullable: false),
+                    DateCreated = table.Column<DateTime>(nullable: false),
+                    DateUpdated = table.Column<DateTime>(nullable: true),
+                    UserCreated = table.Column<Guid>(nullable: true),
+                    UserUpdated = table.Column<Guid>(nullable: true),
+                    PersonId = table.Column<Guid>(nullable: true),
+                    Position = table.Column<string>(nullable: true),
+                    EmploymentDate = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Employees", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Employees_Persons_PersonId",
+                        column: x => x.PersonId,
+                        principalTable: "Persons",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -152,6 +177,11 @@ namespace SocialCRM.DAL.Migrations.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Employees_PersonId",
+                table: "Employees",
+                column: "PersonId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Leads_PersonId",
                 table: "Leads",
                 column: "PersonId");
@@ -179,6 +209,9 @@ namespace SocialCRM.DAL.Migrations.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Employees");
+
             migrationBuilder.DropTable(
                 name: "Legals");
 
