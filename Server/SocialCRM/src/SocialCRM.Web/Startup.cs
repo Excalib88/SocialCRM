@@ -57,6 +57,8 @@ namespace SocialCRM.Web
 
             services.AddScoped<IDbRepository, DbRepository>();
             services.AddTransient<ILeadService, LeadService>();
+            services.AddTransient<IOrderService, OrderService>();
+            services.AddTransient<IProductService, ProductService>();
             services.AddSingleton(new UserEntity{Id = Guid.Empty});
         }
 

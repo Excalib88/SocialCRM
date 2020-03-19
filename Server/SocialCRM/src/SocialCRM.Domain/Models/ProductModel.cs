@@ -10,5 +10,7 @@ namespace SocialCRM.Domain.Models
         public int Quantity { get; set; }
         public DateTime? BuyDate { get; set; }
         public DateTime? SellDate { get; set; }
+        public CategoryModel Category { get; set; }
+        public Guid CategoryId { get; set; }
     }
 }

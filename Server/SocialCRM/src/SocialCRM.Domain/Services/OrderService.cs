@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -27,6 +28,14 @@ namespace SocialCRM.Domain.Services
             var result = await _dbRepository.Add(entity);
 
             return result;
+        }
+
+        public List<OrderModel> GetAll()
+        {
+            var collection = _dbRepository.GetAll<OrderEntity>().ToList();
+            var models = _mapper.Map<List<OrderModel>>(collection);
+
+            return models;
         }
 
         public async Task<OrderModel> Get(Guid id)
