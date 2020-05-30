@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="5.1.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SocialCRM.DAL.Implementations\SocialCRM.DAL.Implementations.csproj" />
+      <ProjectReference Include="..\SocialCRM.Domain.Contracts\SocialCRM.Domain.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>

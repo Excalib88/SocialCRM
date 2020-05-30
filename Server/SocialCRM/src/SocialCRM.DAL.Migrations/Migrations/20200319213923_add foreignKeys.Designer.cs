@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using SocialCRM.DAL;
+using SocialCRM.DAL.Implementations;
 
 namespace SocialCRM.DAL.Migrations.Migrations
 {
@@ -22,7 +22,7 @@ namespace SocialCRM.DAL.Migrations.Migrations
                 .HasAnnotation("ProductVersion", "3.1.1")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
-            modelBuilder.Entity("SocialCRM.DAL.Entities.CategoryEntity", b =>
+            modelBuilder.Entity("SocialCRM.DAL.Implementations.Entities.CategoryEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -51,7 +51,7 @@ namespace SocialCRM.DAL.Migrations.Migrations
                     b.ToTable("CategoryEntity");
                 });
 
-            modelBuilder.Entity("SocialCRM.DAL.Entities.CompanyEntity", b =>
+            modelBuilder.Entity("SocialCRM.DAL.Implementations.Entities.CompanyEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -83,7 +83,7 @@ namespace SocialCRM.DAL.Migrations.Migrations
                     b.ToTable("Companies");
                 });
 
-            modelBuilder.Entity("SocialCRM.DAL.Entities.EmployeeEntity", b =>
+            modelBuilder.Entity("SocialCRM.DAL.Implementations.Entities.EmployeeEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -120,7 +120,7 @@ namespace SocialCRM.DAL.Migrations.Migrations
                     b.ToTable("Employees");
                 });
 
-            modelBuilder.Entity("SocialCRM.DAL.Entities.LeadEntity", b =>
+            modelBuilder.Entity("SocialCRM.DAL.Implementations.Entities.LeadEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -151,7 +151,7 @@ namespace SocialCRM.DAL.Migrations.Migrations
                     b.ToTable("Leads");
                 });
 
-            modelBuilder.Entity("SocialCRM.DAL.Entities.LegalEntity", b =>
+            modelBuilder.Entity("SocialCRM.DAL.Implementations.Entities.LegalEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -187,7 +187,7 @@ namespace SocialCRM.DAL.Migrations.Migrations
                     b.ToTable("Legals");
                 });
 
-            modelBuilder.Entity("SocialCRM.DAL.Entities.OrderEntity", b =>
+            modelBuilder.Entity("SocialCRM.DAL.Implementations.Entities.OrderEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -221,7 +221,7 @@ namespace SocialCRM.DAL.Migrations.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("SocialCRM.DAL.Entities.PersonEntity", b =>
+            modelBuilder.Entity("SocialCRM.DAL.Implementations.Entities.PersonEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -265,7 +265,7 @@ namespace SocialCRM.DAL.Migrations.Migrations
                     b.ToTable("Persons");
                 });
 
-            modelBuilder.Entity("SocialCRM.DAL.Entities.ProductEntity", b =>
+            modelBuilder.Entity("SocialCRM.DAL.Implementations.Entities.ProductEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -316,55 +316,55 @@ namespace SocialCRM.DAL.Migrations.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("SocialCRM.DAL.Entities.EmployeeEntity", b =>
+            modelBuilder.Entity("SocialCRM.DAL.Implementations.Entities.EmployeeEntity", b =>
                 {
-                    b.HasOne("SocialCRM.DAL.Entities.PersonEntity", "Person")
+                    b.HasOne("SocialCRM.DAL.Implementations.Entities.PersonEntity", "Person")
                         .WithMany()
                         .HasForeignKey("PersonId");
                 });
 
-            modelBuilder.Entity("SocialCRM.DAL.Entities.LeadEntity", b =>
+            modelBuilder.Entity("SocialCRM.DAL.Implementations.Entities.LeadEntity", b =>
                 {
-                    b.HasOne("SocialCRM.DAL.Entities.PersonEntity", "Person")
+                    b.HasOne("SocialCRM.DAL.Implementations.Entities.PersonEntity", "Person")
                         .WithMany()
                         .HasForeignKey("PersonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("SocialCRM.DAL.Entities.LegalEntity", b =>
+            modelBuilder.Entity("SocialCRM.DAL.Implementations.Entities.LegalEntity", b =>
                 {
-                    b.HasOne("SocialCRM.DAL.Entities.CompanyEntity", "Company")
+                    b.HasOne("SocialCRM.DAL.Implementations.Entities.CompanyEntity", "Company")
                         .WithMany()
                         .HasForeignKey("CompanyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SocialCRM.DAL.Entities.LeadEntity", "Lead")
+                    b.HasOne("SocialCRM.DAL.Implementations.Entities.LeadEntity", "Lead")
                         .WithMany()
                         .HasForeignKey("LeadId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("SocialCRM.DAL.Entities.OrderEntity", b =>
+            modelBuilder.Entity("SocialCRM.DAL.Implementations.Entities.OrderEntity", b =>
                 {
-                    b.HasOne("SocialCRM.DAL.Entities.LeadEntity", "Lead")
+                    b.HasOne("SocialCRM.DAL.Implementations.Entities.LeadEntity", "Lead")
                         .WithMany()
                         .HasForeignKey("LeadId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("SocialCRM.DAL.Entities.ProductEntity", b =>
+            modelBuilder.Entity("SocialCRM.DAL.Implementations.Entities.ProductEntity", b =>
                 {
-                    b.HasOne("SocialCRM.DAL.Entities.CategoryEntity", "Category")
+                    b.HasOne("SocialCRM.DAL.Implementations.Entities.CategoryEntity", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SocialCRM.DAL.Entities.OrderEntity", null)
+                    b.HasOne("SocialCRM.DAL.Implementations.Entities.OrderEntity", null)
                         .WithMany("Products")
                         .HasForeignKey("ProductsId");
                 });

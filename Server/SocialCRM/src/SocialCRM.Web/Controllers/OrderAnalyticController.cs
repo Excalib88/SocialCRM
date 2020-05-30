@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SocialCRM.Domain.Abstractions;
+using SocialCRM.Domain.Contracts;
 
 namespace SocialCRM.Web.Controllers
 {

@@ -14,13 +14,15 @@
     ],
     "sources": {
       "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-      "https://api.nuget.org/v3/index.json": {}
+      "https://api.nuget.org/v3/index.json": {},
+      "https://artifact-out.dev.akbars.ru/artifactory/api/nuget/nuget": {},
+      "https://artifact-out.dev.akbars.ru/artifactory/api/nuget/v3/nuget": {}
     },
     "frameworks": {
       "netstandard2.1": {
         "projectReferences": {
-          "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\SocialCRM.DAL.csproj": {
-            "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL\\SocialCRM.DAL.csproj"
+          "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL.Implementations\\SocialCRM.DAL.Implementations.csproj": {
+            "projectPath": "C:\\projects\\SocialCRM\\Server\\SocialCRM\\src\\SocialCRM.DAL.Implementations\\SocialCRM.DAL.Implementations.csproj"
           }
         }
       }

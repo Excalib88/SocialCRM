@@ -10,7 +10,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\SocialCRM.DAL\SocialCRM.DAL.csproj" />
+      <ProjectReference Include="..\SocialCRM.DAL.Implementations\SocialCRM.DAL.Implementations.csproj" />
     </ItemGroup>
 
 </Project>

@@ -15,9 +15,10 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\SocialCRM.DAL.Implementations\SocialCRM.DAL.Implementations.csproj" />
       <ProjectReference Include="..\SocialCRM.DAL.Migrations\SocialCRM.DAL.Migrations.csproj" />
-      <ProjectReference Include="..\SocialCRM.DAL\SocialCRM.DAL.csproj" />
-      <ProjectReference Include="..\SocialCRM.Domain\SocialCRM.Domain.csproj" />
+      <ProjectReference Include="..\SocialCRM.Domain.Contracts\SocialCRM.Domain.Contracts.csproj" />
+      <ProjectReference Include="..\SocialCRM.Domain.Implementations\SocialCRM.Domain.Implementations.csproj" />
     </ItemGroup>
 
 </Project>

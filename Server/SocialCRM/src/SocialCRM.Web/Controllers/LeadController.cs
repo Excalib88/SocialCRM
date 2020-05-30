@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SocialCRM.Domain.Abstractions;
-using SocialCRM.Domain.Models;
+using SocialCRM.Domain.Contracts;
+using SocialCRM.Domain.Contracts.Models;
 
 namespace SocialCRM.Web.Controllers
 {

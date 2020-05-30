@@ -14,11 +14,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
-using SocialCRM.DAL;
-using SocialCRM.DAL.Entities;
-using SocialCRM.DAL.Repositories;
-using SocialCRM.Domain.Abstractions;
-using SocialCRM.Domain.Services;
+using SocialCRM.DAL.Contracts;
+using SocialCRM.DAL.Contracts.Entities;
+using SocialCRM.DAL.Implementations;
+using SocialCRM.DAL.Implementations.Repositories;
+using SocialCRM.Domain.Contracts;
+using SocialCRM.Domain.Implementations.Services;
 
 namespace SocialCRM.Web
 {
@@ -50,7 +51,7 @@ namespace SocialCRM.Web
                 options
                     .UseNpgsql(_configuration.GetConnectionString("DefaultConnection"),
                         assembly =>
-                            assembly.MigrationsAssembly("SocialCRM.DAL.Migrations"));
+                            assembly.MigrationsAssembly("SocialCRM.DAL.Implementations.Migrations"));
             });
             
             services.AddAutoMapper(typeof(Startup));

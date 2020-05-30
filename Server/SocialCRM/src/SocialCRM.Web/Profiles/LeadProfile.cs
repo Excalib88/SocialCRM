@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using AutoMapper;
-using SocialCRM.DAL.Entities;
-using SocialCRM.Domain.Models;
+using SocialCRM.DAL.Contracts.Entities;
+using SocialCRM.Domain.Contracts.Models;
 
 namespace SocialCRM.Web.Profiles
 {
@@ -19,6 +19,8 @@ namespace SocialCRM.Web.Profiles
             CreateMap<ProductEntity, ProductModel>();
             CreateMap<List<ProductModel>, List<ProductEntity>>();
             CreateMap<List<ProductEntity>, List<ProductModel>>();
+            CreateMap<PersonModel, PersonEntity>();
+            CreateMap<PersonEntity, PersonModel>();
         }
     }
 }
